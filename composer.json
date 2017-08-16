@@ -10,8 +10,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "NeCMS\\Composer": "src/"
+        "psr-4": {
+            "NeCMS\\Composer\\": "src/"
         }
     },
     "extra": {
