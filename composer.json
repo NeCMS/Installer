@@ -9,6 +9,14 @@
             "email": "ghome.cz@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-0": {
+            "NeCMS\\Composer": "src/"
+        }
+    },
+    "extra": {
+        "class": "NeCMS\\Composer\\TemplateInstallerPlugin"
+    },
     "require": {
         "composer-plugin-api": "^1.0"
     },
