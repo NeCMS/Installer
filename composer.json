@@ -14,6 +14,9 @@
             "NeCMS\\Composer": "src/"
         }
     },
+    "extra": {
+        "class": "NeCMS\\Composer\\TemplateInstallerPlugin"
+    },
     "require": {
         "composer-plugin-api": "^1.0"
     },
