@@ -37,7 +37,7 @@ class TemplateInstaller extends LibraryInstaller
 	public function supports($packageType)
 	{
 		switch ($packageType) {
-			case 'necms/template':
+			case 'necms-template':
 				return true;
 				break;
 			default:
