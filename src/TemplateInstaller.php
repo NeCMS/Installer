@@ -18,7 +18,7 @@ class TemplateInstaller extends LibraryInstaller
 	 */
 	public function getInstallPath(PackageInterface $package)
 	{
-		$prefix = substr($package->getPrettyName(), 0, 23);
+		$prefix = substr($package->getPrettyName(), 0, 15);
 
 		if ('necms-template-' !== $prefix) {
 			throw new \InvalidArgumentException(
@@ -27,7 +27,7 @@ class TemplateInstaller extends LibraryInstaller
 				.'"necms/template-"'
 			);
 		}
-		return 'app/templates/' . substr($package->getPrettyName(), 23);
+		return 'app/templates/' . $prefix;
 	}
 
 
