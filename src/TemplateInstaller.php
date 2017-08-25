@@ -27,7 +27,7 @@ class TemplateInstaller extends LibraryInstaller
 				.'"necms/template-"'
 			);
 		}
-		return 'app/templates/' . $prefix;
+		return 'app/templates/' . substr($package->getPrettyName(), 15);
 	}
 
 
