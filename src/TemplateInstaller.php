@@ -20,7 +20,7 @@ class TemplateInstaller extends LibraryInstaller
 	{
 		$prefix = substr($package->getPrettyName(), 0, 23);
 
-		if ('necms/template-' !== $prefix) {
+		if ('necms-template-' !== $prefix) {
 			throw new \InvalidArgumentException(
 				'Unable to install template, NeCMS templates '
 				.'should always start their package name with '
